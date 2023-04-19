@@ -1,0 +1,135 @@
+/**
+ * Write CSS code in this file to style your JavaFX user interface
+ *
+ * Note: You must link this file to your scene object by adding the following line of code to the
+ * JavaFX start() method:
+ *   scene.getStylesheets().add("main.css");
+ */
+
+.root {
+    -fx-background-image: url("background.png");
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+}
+
+.title {
+    -fx-font-size: 48px;
+    -fx-font-family: "SF Pro";
+    -fx-text-fill: #FF6000;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 2, 2, 0, 0);
+}
+
+.subtitle {
+    -fx-font-size: 32px;
+    -fx-font-family: "SF Pro";
+    -fx-text-fill: #FFA559;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 2, 2, 0, 0);
+}
+
+.victory {
+    -fx-font-size: 32px;
+    -fx-font-family: "SF Pro";
+    -fx-text-fill: #FFE6C7;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 2, 2, 0, 0);
+}
+
+.clue {
+    -fx-background-color: #FF6000;
+    -fx-text-fill: #fbeedd;
+    -fx-alignment: center;
+    -fx-font-size: 21px;
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+}
+
+.clue-satisfied {
+    -fx-background-color: #097969;
+    -fx-text-fill: #fbeedd;
+    -fx-alignment: center;
+    -fx-font-size: 21px;
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+}
+
+.wall {
+    -fx-background-color: #454545;
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+}
+
+.empty-corridor {
+    -fx-background-color: #FFE6C7;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+}
+
+.lit-corridor {
+    -fx-background-color: #FFA559;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+}
+
+.lamp-corridor {
+    -fx-background-color: #FFA559;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-background-image: url('light-bulb.png');
+    -fx-background-size: 40px 40px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+}
+
+.illegal-lamp-corridor {
+    -fx-background-color: red;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-background-image: url('light-bulb.png');
+    -fx-background-size: 40px 40px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+}
+
+.button-controls {
+    -fx-background-color: #FF6000;
+    -fx-pref-width: 150px;
+    -fx-pref-height: 50px;
+    -fx-background-radius: 5px;
+    -fx-border-color: #C97E44;
+    -fx-border-radius: 5px;
+    -fx-border-width: 2px;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-font-text-color: #454545;
+    -fx-padding: 10px 20px;
+    -fx-text-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 10, 0, 3, 3);
+
+}
+
+.button-controls:hover {
+    -fx-background-radius:0;
+    -fx-background-insets: 3px;
+}
+
+.button:hover {
+    -fx-background-radius:0;
+    -fx-border-color: #FF6000;
+    -fx-border-width: 2px;
+    -fx-background-insets: 3px;
+}
+
+.button:pressed {
+  -fx-background-color: #FFA559;
+  -fx-background-radius: 0px;
+  -fx-border-color: #FF6000;
+  -fx-border-width: 1px;
+  -fx-background-insets: 5px;
+}
